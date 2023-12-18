@@ -15,7 +15,7 @@ let myHeader = document.querySelector('h1');
 function SetUserName() {
     let myName = prompt('Введите пожалуйста своё имя');
     localStorage.setItem('name', myName);
-    myHeader.textContent = 'Ульянка приветствует тебя' + myName;
+    myHeader.textContent = 'Ульянка приветствует тебя, ' + myName;
 }
 
 if (!localStorage.getItem('name')) {
